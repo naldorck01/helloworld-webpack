@@ -1,5 +1,1 @@
 # helloworld-webpack
-
---- 
-texto
---- 
