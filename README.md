@@ -29,9 +29,17 @@
   <section>
     <article>
       <h2>Scripts</h2>
+      <table>
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>npx webpack</code></td>
+            <td>Compile the files in the "src" folder and create a folder called "dist"</code>
+          </tr>
+        </tbody>
+      </table>
       <code>
-        npx webpack # Compile the files in the "src" folder and create a folder called "dist"
-      </code>
     </article>
   </section>
 
