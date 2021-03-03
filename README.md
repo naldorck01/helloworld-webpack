@@ -1,6 +1,6 @@
 <main>
   <h1>
-    helloworld:webpack <img src="https://raw.githubusercontent.com/naldorck01/helloworld-webpack/main/docs/assets/img/js-format.svg" alt="Javascript" title="Javascript" />
+    helloworld:webpack <img src="js-format.png" alt="Javascript" title="Javascript" />
   </h1>
   
   <section>
