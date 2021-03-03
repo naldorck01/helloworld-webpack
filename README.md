@@ -1,13 +1,17 @@
 <main>
 
   <section>
-    <article style="text-alight: center;">
-      <img src="a.jpg" style="max-width: 400px;"/>
+    <article>
+      <center>
+        <img src="a.jpg" width="400" />
+      </center>
     </article>
   </section>
 
+  <br />
+
   <h1>
-    <img src="docs/assets/javascript.png" alt="Javascript" title="Javascript" /> helloworld:webpack 
+    <img src="docs/assets/img/javascript.png" alt="Javascript" title="Javascript" /> helloworld:webpack 
   </h1>
   
   <section>
