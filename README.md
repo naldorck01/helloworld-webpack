@@ -2,9 +2,7 @@
 
   <section>
     <article>
-      <center>
-        <img src="a.jpg" width="400" />
-      </center>
+      <img align="center" alt="Tech" src="docs/assets/img/tech.jpg" src="tech.jpg" title="Tech" width="400" />      
     </article>
   </section>
 
