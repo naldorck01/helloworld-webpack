@@ -1,6 +1,13 @@
 <main>
+
+  <section>
+    <article style="text-alight: center;">
+      <img src="a.jpg" style="max-width: 400px;"/>
+    </article>
+  </section>
+
   <h1>
-    helloworld:webpack <img src="js-format.png" alt="Javascript" title="Javascript" />
+    <img src="docs/assets/javascript.png" alt="Javascript" title="Javascript" /> helloworld:webpack 
   </h1>
   
   <section>
@@ -26,6 +33,9 @@
     <article>
       <p>
         Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </p>
+      <p>
+        <a href='https://www.freepik.com/vectors/technology'>Technology vector created by vectorjuice - www.freepik.com</a>
       </p>
     </article>
   </section>
