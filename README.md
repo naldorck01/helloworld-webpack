@@ -11,7 +11,8 @@
   <br />
 
   <h1>
-    <img src="docs/assets/img/javascript.png" alt="Javascript" title="Javascript" /> helloworld:webpack 
+    <img src="docs/assets/img/javascript.png" alt="Javascript" title="Javascript" /> 
+    helloworld:<a href="https://webpack.js.org/" rel="external" title="Webpack">webpack</a>
   </h1>
   
   <section>
@@ -27,7 +28,10 @@
 
   <section>
     <article>
-      <h2>Usage</h2>
+      <h2>Scripts</h2>
+      <code>
+        npx webpack # Compile the files in the "src" folder and create a folder called "dist"
+      </code>
     </article>
   </section>
 
@@ -37,10 +41,9 @@
     <article>
       <p>
         Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      </p>
-      <p>
+        <br />
         <a href='https://www.freepik.com/vectors/technology'>Technology vector created by vectorjuice - www.freepik.com</a>
-      </p>
+      </p>      
     </article>
   </section>
 
