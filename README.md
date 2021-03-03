@@ -10,10 +10,17 @@
 
   <br />
 
-  <h1>
-    <img src="docs/assets/img/javascript.png" alt="Javascript" title="Javascript" /> 
-    helloworld:<a href="https://webpack.js.org/" rel="external" title="Webpack">webpack</a>
-  </h1>
+  <section>
+    <article>
+      <h1>
+        <img src="docs/assets/img/javascript.png" alt="Javascript" title="Javascript" /> 
+        helloworld:<a href="https://webpack.js.org/" rel="external" title="Webpack">webpack</a>
+      </h1>
+      <p>
+        At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
+      </p>
+    </article>
+  </section>
   
   <section>
     <article>
@@ -29,17 +36,25 @@
   <section>
     <article>
       <h2>Scripts</h2>
-      <table width="100%">
+      <table>
         <thead>
           <tr>
-            <td>Command</td>
-            <td>Description</td>
+            <td><strong>Command</strong></td>
+            <td><strong>Description</strong></td>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>npx webpack</code></td>
-            <td>Compile the files in the "src" folder and create a folder called "dist"</code>
+            <td>Compile the files within "src" folder and create a folder called "dist"</code>
+          </tr>
+          <tr>
+            <td><code>webpack --mode development</code></td>
+            <td>Compile in development mode</code>
+          </tr>
+          <tr>
+            <td><code>webpack --mode production</code></td>
+            <td>Compile in production mode. This is the default mode.</code>
           </tr>
         </tbody>
       </table>
