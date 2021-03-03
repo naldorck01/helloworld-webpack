@@ -29,8 +29,12 @@
   <section>
     <article>
       <h2>Scripts</h2>
-      <table>
+      <table width="100%">
         <thead>
+          <tr>
+            <td>Command</td>
+            <td>Description</td>
+          </tr>
         </thead>
         <tbody>
           <tr>
@@ -39,7 +43,6 @@
           </tr>
         </tbody>
       </table>
-      <code>
     </article>
   </section>
 
