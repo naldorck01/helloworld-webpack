@@ -1,10 +1,12 @@
-import './assets/css/app.css'
-import './assets/scss/components.scss'
-import covid from './assets/img/mascara-facial.png'
+import '@css/app.css'
+import '@scss/components.scss'
+import covid from '@img/mascara-facial.png'
+
+const API = process.env.API
 
 const getDataFromApi = async () => {
   try {
-    let res = await fetch('https://api.covid19api.com/country/colombia/status/confirmed?from=2021-02-01T00:00:00Z&to=2021-03-01T00:00:00Z')
+    let res = await fetch(`${API}country/colombia/status/confirmed?from=2021-02-01T00:00:00Z&to=2021-02-15T00:00:00Z`)
     res = await res.json()
     return res;
   } catch(error) {
@@ -13,21 +15,24 @@ const getDataFromApi = async () => {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const res = await getDataFromApi()
-  var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
   let output = `
-    <section>
+    <section class="img__wrapper--center">
       <img src="${covid}" alt="Covid" title="Covid" width="150"/>
     </section>
   `
-  output += '<ul>'
+  try {
+    const res = await getDataFromApi()
+    var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }  
+    output += '<ul>'
 
-  res.forEach(data => { 
-    output += `<li><strong>Date</strong>: ${new Date(data.Date).toLocaleDateString('en-US', dateOptions)} - <strong>Cases:</strong> ${data.Cases}</li>`
-  })
+    res.forEach(data => { 
+      output += `<li><strong>Date</strong>: ${new Date(data.Date).toLocaleDateString('en-US', dateOptions)} - <strong>Cases:</strong> ${data.Cases}</li>`
+    })
+    
+    output += '</ul>'
+    document.querySelector('.app').innerHTML = output
+  } catch(error) {
+    document.querySelector('.app').innerHTML = error
+  }
   
-  output += '</ul>'
-
-  document.querySelector('.app').innerHTML = output
 })

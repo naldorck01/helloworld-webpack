@@ -1,5 +1,22 @@
 $font-default: 1.4rem;
 
+.title--default {
+  h1 {
+    font-size: 1.7rem;
+    margin-top: 1.7rem;
+    text-transform: uppercase;
+  }
+}
+
 .list__items--default {
   font-size: $font-default;
+  margin-bottom: 2rem;
+  li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.img__wrapper--center {
+  margin: 2rem 0;
+  text-align: center;
 }

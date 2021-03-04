@@ -83,6 +83,14 @@
             <td><code>npm install -D css-minimizer-webpack-plugin</code></td>
             <td>Optimize CSS files</td>
           </tr>
+          <tr>
+            <td><code>npm install -D dotenv-webpack</code></td>
+            <td>Environment variables. Wraps dotenv and Webpack.DefinePlugin. As such, it does a text replace in the resulting bundle for any instances of process.env.</td>
+          </tr>
+          <tr>
+            <td><code>npm install -D clean-webpack-plugin</code></td>
+            <td>Clean build directory</td>
+          </tr>
         </tbody>
       </table>      
     </article>
@@ -132,16 +140,12 @@
             <td>Compile the files within "src" folder and create a folder called "dist"</code>
           </tr>
           <tr>
-            <td><code>webpack --mode development</code></td>
+            <td><code>webpack --config webpack.config.dev.js</code></td>
             <td>Compile in development mode</code>
           </tr>
           <tr>
             <td><code>webpack --mode production</code></td>
             <td>Compile in production mode. This is the default mode.</code>
-          </tr>
-          <tr>
-            <td><code>webpack --mode production --config webpack.config.js</code></td>
-            <td>Compile in production mode and custom webpack config file</code>
           </tr>
         </tbody>
       </table>

@@ -20,3 +20,9 @@ html {
 body {
   background-color: var(--color-white);
 }
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

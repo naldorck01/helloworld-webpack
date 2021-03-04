@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const DotEnv = require('dotenv-webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
@@ -13,12 +12,8 @@ module.exports = {
     filename: '[name].[contenthash].js',
     assetModuleFilename: 'assets/img/[hash][ext][query]'
   },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin()
-    ]
-  },
+  mode: 'development',
+  watch: true,
   resolve: {
     extensions: ['.js'],
     alias: {
