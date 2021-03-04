@@ -26,12 +26,62 @@
     <article>
       <h2>Installation</h2> 
       <p>Using NPM:</p>
-      <div></div>
-      <code>
-        npm install -D webpack webpack-cli 
-      </code>
+      <table>
+        <thead>
+          <tr>
+            <td><strong>Command</strong></td>
+            <td><strong>Description</strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>npm install -D webpack webpack-cli</code></td>
+            <td>Basic webpack dependencies</td>
+          </tr>
+          <tr>
+            <td><code>npm install -D babel-loader @babel/core</code></td>
+            <td>Work babel with webpack. Ensure javascript compatibility between browsers.</td>
+          </tr>
+          <tr>
+            <td><code>npm install -D @babel/preset-env</code></td>
+            <td>Use the latest ecmascript features</td>
+          </tr>
+          <tr>
+            <td><code>npm install -D @babel/plugin-transform-runtime</code></td>
+            <td>Work with asynchronism(Ex: async await)</td>
+          </tr>
+        </tbody>
+      </table>      
     </article>
   </section>
+
+  <br />
+
+  <section>
+    <article>
+      <h2>Core files</h2> 
+      <table>
+        <thead>
+          <tr>
+            <td><strong>File</strong></td>
+            <td><strong>Description</strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>./webpack.config.js</code></td>
+            <td>Default file that contains all the webpack configuration for the current project</td>
+          </tr>
+          <tr>
+            <td><code>./.babelrc</code></td>
+            <td>Settings to work with babel in the current project</td>
+          </tr>
+        </tbody>
+      </table> 
+    </article>
+  </section>
+
+  <br />
 
   <section>
     <article>
@@ -55,6 +105,10 @@
           <tr>
             <td><code>webpack --mode production</code></td>
             <td>Compile in production mode. This is the default mode.</code>
+          </tr>
+          <tr>
+            <td><code>webpack --mode production --config webpack.config.js</code></td>
+            <td>Compile in production mode and custom webpack config file</code>
           </tr>
         </tbody>
       </table>

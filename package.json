@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack:development": "webpack --mode development",
-    "webpack:production": "webpack"
+    "webpack:production": "webpack",
+    "webpack:production:file": "npx webpack --mode production --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   },
   "homepage": "https://github.com/naldorck01/helloworld-webpack#readme",
   "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "babel-loader": "^8.2.2",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0"
   }
