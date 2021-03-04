@@ -75,6 +75,14 @@
             <td><code>npm install -D node-sass sass-loader</code></td>
             <td>Work with  sass</td>
           </tr>
+          <tr>
+            <td><code>npm install -D copy-webpack-plugin</code></td>
+            <td>Copies individual files or entire directories, which already exist, to the build directory.</td>
+          </tr>
+          <tr>
+            <td><code>npm install -D css-minimizer-webpack-plugin</code></td>
+            <td>Optimize CSS files</td>
+          </tr>
         </tbody>
       </table>      
     </article>

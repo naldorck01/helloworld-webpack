@@ -1,5 +1,6 @@
 import './assets/css/app.css'
 import './assets/scss/components.scss'
+import covid from './assets/img/mascara-facial.png'
 
 const getDataFromApi = async () => {
   try {
@@ -8,15 +9,19 @@ const getDataFromApi = async () => {
     return res;
   } catch(error) {
     return error
-  }
-  
+  }  
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
   const res = await getDataFromApi()
   var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-  let output = '<ul>'
+  let output = `
+    <section>
+      <img src="${covid}" alt="Covid" title="Covid" width="150"/>
+    </section>
+  `
+  output += '<ul>'
 
   res.forEach(data => { 
     output += `<li><strong>Date</strong>: ${new Date(data.Date).toLocaleDateString('en-US', dateOptions)} - <strong>Cases:</strong> ${data.Cases}</li>`
