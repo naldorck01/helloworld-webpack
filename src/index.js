@@ -1,3 +1,6 @@
+import './assets/css/app.css'
+import './assets/scss/components.scss'
+
 const getDataFromApi = async () => {
   try {
     let res = await fetch('https://api.covid19api.com/country/colombia/status/confirmed?from=2021-02-01T00:00:00Z&to=2021-03-01T00:00:00Z')

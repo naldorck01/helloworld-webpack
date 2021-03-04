@@ -1,0 +1,22 @@
+/* https://flatuicolors.com/palette/defo */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  --color-silver: #bdc3c7;
+  --color-midnight-blue: #2c3e50;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size:62.5%;
+  font-family: 'Roboto', sans-serif;;
+}
+
+body {
+  background-color: var(--color-white);
+}
