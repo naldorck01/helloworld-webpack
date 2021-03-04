@@ -3,7 +3,7 @@
   <section>
     <article>
       <p align="center"> 
-        <img alt="Tech" src="docs/assets/img/tech.jpg" src="tech.jpg" title="Tech" width="400" />      
+        <img alt="Tech" src="docs/assets/img/tech.jpg" title="Tech" width="400" />      
       </p>
     </article>
   </section>
@@ -21,7 +21,20 @@
       </p>
     </article>
   </section>
+
+  <hr />
+
+  <section>
+    <article>
+      <h2>Preview</h2> 
+      <p align="center"> 
+        <img alt="Theme preview" src="docs/assets/img/theme-preview.png" title="Theme preview" width="400" />      
+      </p>
+    </article>
+  </section>
   
+  <hr />
+
   <section>
     <article>
       <h2>Installation</h2> 
