@@ -91,6 +91,14 @@
             <td><code>npm install -D clean-webpack-plugin</code></td>
             <td>Clean build directory</td>
           </tr>
+          <tr>
+            <td><code>npm install -D webpack-dev-server</code></td>
+            <td>Provides you with a simple web server and the ability to use live reloading</td>
+          </tr>
+          <tr>
+            <td><code>npm install -D webpack-bundle-analyzer</code></td>
+            <td>Visualize size of webpack output files with an interactive zoomable treemap.</td>
+          </tr>
         </tbody>
       </table>      
     </article>
@@ -146,6 +154,18 @@
           <tr>
             <td><code>webpack --mode production</code></td>
             <td>Compile in production mode. This is the default mode.</code>
+          </tr>
+          <tr>
+            <td><code>webpack serve --config webpack.config.dev.js</code></td>
+            <td>Enable a local server with development config.</code>
+          </tr>
+          <tr>
+            <td><code>npx webpack --profile --json > stats.json</code></td>
+            <td>Analize all the installed and used modules and generate a file with the statistics results</code>
+          </tr>
+          <tr>
+            <td><code>npx webpack-bundle-analyzer stats.json</code></td>
+            <td>Open a local server to see the statistics generated</code>
           </tr>
         </tbody>
       </table>
