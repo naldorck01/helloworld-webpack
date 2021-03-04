@@ -22,7 +22,7 @@
     </article>
   </section>
 
-  <hr />
+  <br />
 
   <section>
     <article>
@@ -33,7 +33,7 @@
     </article>
   </section>
   
-  <hr />
+  <br />
 
   <section>
     <article>
