@@ -16,6 +16,7 @@ module.exports = {
     assetModuleFilename: 'assets/img/[hash][ext][query]'
   },
   mode: 'development',
+  devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

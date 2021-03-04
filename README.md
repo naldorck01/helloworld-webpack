@@ -60,6 +60,10 @@
             <td>Use the latest ecmascript features</td>
           </tr>
           <tr>
+            <td><code>npm install -D @babel/plugin-transform-runtime</code></td>
+            <td>Work with async functions. async await and fetch</td>
+          </tr>
+          <tr>
             <td><code>npm install -D html-webpack-plugin</code></td>
             <td>Work with .html files</td>
           </tr>
@@ -68,7 +72,7 @@
             <td>The css-loader interprets @import and url() like import/require() and will resolve them.</td>
           </tr>
           <tr>
-            <td><code>npm install -D html-webpack-plugin</code></td>
+            <td><code>npm install -D mini-css-extract-plugin</code></td>
             <td>This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.</td>
           </tr>
           <tr>

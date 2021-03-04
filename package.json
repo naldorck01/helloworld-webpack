@@ -8,7 +8,7 @@
     "webpack:development": "webpack --config webpack.config.dev.js",
     "webpack:production": "webpack --mode production",
     "webpack:production:watch": "webpack --watch --mode production",
-    "webpack:serve": "webpack serve --config webpack.config.dev.js"
+    "webpack:development:serve": "webpack serve --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
